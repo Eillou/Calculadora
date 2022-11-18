@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculadora con JavaScript</title>
+<link rel="stylesheet" href="CSS/Estilo.css"/>
+<script src="Funciones.js"></script>
+</head>
+<body>
+
+  <form name="Calculadora">
+
+    <table>
+     <tr>
+     <td colspan = "5">
+     <input class="cajita" name="Funciones" type="text" value="0" disabled>
+     </td>
+     </tr>
+     <td colspan = "2">
+      <input class="rojito" type="button" value="C" onclick="limpiar()"/>
+      </td>
+      <td colspan = "1">
+        <input class="rojito" type="button" value="CE" onclick=""/>
+        </td>
+        <td colspan = "2">
+          <input class="rojito" type="button" value="BACK" onclick=""/>
+          </td>
+     <tr>
+
+     </tr>
+
+     <tr>
+     <td>
+     <input type="button" value="7" onclick="ingresarnumero(this.value)">
+    </td>
+     <td>
+     <input type="button" value="8" onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="9" onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="/" onclick="ingresaoperacion(this.value)">
+     </td>
+     <td>
+     <input type="button" value="√" onclick="raiz()">
+     </td>
+     </tr>
+    
+     <tr>
+     <td>
+     <input type="button" value="4" onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="5" onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="6" onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="*" onclick="ingresaoperacion(this.value)">
+     </td>
+     <td>
+     <input type="button" value="%" onclick="ingresaoperacion(this.value)">
+      </td>
+     </tr>
+    
+     <tr>
+     <td>
+     <input type="button" value="1" onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="2" onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="3" onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="-" onclick="ingresaoperacion(this.value)">
+     </td>
+     <td>
+     <input type="button" value="1/X" onclick="ingresaoperacion(this.value)">
+     </td>
+     </tr>
+    
+     <tr>
+     <td>
+     <input type="button" value="0" onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="+/-" onclick="ingresaoperacion(this.value)">
+     </td>
+     <td>
+     <input type="button" value="." onclick="ingresarnumero(this.value)">
+     </td>
+     <td>
+     <input type="button" value="+" onclick="ingresaoperacion(this.value)">
+     </td>
+     <td>
+     <input type="button" value="=" onclick="resultado()">
+     </td>
+     </tr>
+    
+    
+    </table>
+    
+    </form>
+
+</body>
+</html>
